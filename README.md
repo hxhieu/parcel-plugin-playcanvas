@@ -27,6 +27,7 @@ Uploading script bundle to PlayCanvas... DONE!
 
 # Inspiration and credits
 [https://github.com/whydoidoit/babel-playcanvas-template](https://github.com/whydoidoit/babel-playcanvas-template)
+
 [https://github.com/snowfrogdev/typescript-playcanvas-template](https://github.com/snowfrogdev/typescript-playcanvas-template)
 
 Thank you!

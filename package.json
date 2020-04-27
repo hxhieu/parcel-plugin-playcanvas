@@ -1,7 +1,7 @@
 {
   "name": "parcel-plugin-playcanvas",
   "description": "A parcel plugin will upload the bundle to PlayCanvas project asset",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Hugh Hoang <hugh.hoang@gmail.com>",
   "bugs": {
     "url": "https://github.com/hxhieu/parcel-plugin-playcanvas/issues"

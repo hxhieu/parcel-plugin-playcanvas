@@ -36,7 +36,7 @@ module.exports = bundler => {
     const buffer = fs.readFileSync(bundlePath)
     const fileName = outFile
     const projectId = process.env.PLAYCANVAS_PROJECT_ID
-    const assetId = process.env.PLAYCANVAS_PROJECT_ID
+    const assetId = process.env.PLAYCANVAS_ASSET_ID
     const accessToken = process.env.PLAYCANVAS_ACCESS_TOKEN
 
     if (!projectId || !assetId || !accessToken) {
@@ -44,10 +44,6 @@ module.exports = bundler => {
     }
 
     const form = new FormData()
-    form.append("project", `${projectId}`)
-    form.append("name", fileName)
-    form.append("asset", `${assetId}`)
-    form.append("preload", "true")
     form.append('file', buffer, {
       contentType: 'text/javascript',
       filename: fileName,
@@ -55,9 +51,9 @@ module.exports = bundler => {
 
     process.stdout.write(chalk.bgCyan.white('Uploading script bundle to PlayCanvas...'))
 
-    fetch(`https://playcanvas.com/api/assets`,
+    fetch(`https://playcanvas.com/api/assets/${assetId}`,
       {
-        method: 'POST',
+        method: 'PUT',
         body: form,
         headers: {
           "Authorization": `Bearer ${accessToken}`

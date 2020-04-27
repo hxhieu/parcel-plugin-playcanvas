@@ -1,0 +1,30 @@
+{
+  "name": "parcel-plugin-playcanvas",
+  "description": "A parcel plugin will upload the bundle to PlayCanvas project asset",
+  "version": "1.0.0",
+  "author": "Hugh Hoang <hugh.hoang@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/hxhieu/parcel-plugin-playcanvas/issues"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "dayjs": "^1.8.25",
+    "form-data": "^3.0.0",
+    "node-fetch": "^2.6.0"
+  },
+  "homepage": "https://github.com/hxhieu/parcel-plugin-playcanvas",
+  "keywords": [
+    "bundler",
+    "local",
+    "local-dev",
+    "parcel",
+    "playcanvas"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "name": "parcel-plugin-playcanvas",
+    "url": "https://github.com/hxhieu/parcel-plugin-playcanvas"
+  }
+}
